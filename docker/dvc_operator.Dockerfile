@@ -17,6 +17,7 @@ COPY run_poodle.sh /run_poodle.sh
 
 RUN mkdir /src && cd /src && \
 	git clone https://github.com/yuxiangl/poodle-dvc.git && \
+	cd /src/poodle-dvc && \
 	git checkout dvc-operator && \
 	pip install --no-cache-dir -r /src/poodle-dvc/requirements.txt
 
