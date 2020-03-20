@@ -21,8 +21,6 @@ RUN mkdir /src && cd /src && \
 	git checkout dvc-operator && \
 	pip install --no-cache-dir -r /src/poodle-dvc/requirements.txt
 
-RUN mkdir /data
-
 WORKDIR /
 
 ENTRYPOINT ["bash", "/run_poodle.sh"]
