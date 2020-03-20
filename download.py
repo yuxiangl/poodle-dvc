@@ -1,8 +1,9 @@
 import pandas
+import os
 
 
-IN_FILE_NAME = "gs://genomics-public-data/simons-genome-diversity-project/reports/Simons_Genome_Diversity_Project_sample_reference_results.csv"
-OUT_FILE_NAME = "results.parquet"
+IN_FILE_NAME = os.environ.get('IN_FILE_NAME')
+OUT_FILE_NAME = "/data/results.parquet"
 
 
 def main():
