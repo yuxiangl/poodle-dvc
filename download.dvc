@@ -1,11 +1,11 @@
-md5: 5e20c3322be61ede034ac2cdbeaab964
+md5: 8997aa72d6139299ce1e40b8031adebc
 cmd: python download.py
 deps:
-- md5: 8b8c358ae74ab10836a5ab8c086ee98f
+- md5: 492903ac571ecf25ea9bcf6c00542bd6
   path: download.py
 outs:
 - md5: 8fdda40e96df018289d2004d76066bc9
-  path: results.parquet
+  path: /tmp/data/results.parquet
   cache: true
   metric: false
   persist: false
