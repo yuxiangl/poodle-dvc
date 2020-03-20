@@ -3,7 +3,7 @@ import os
 
 
 IN_FILE_NAME = os.environ.get('IN_FILE_NAME')
-OUT_FILE_NAME = "/data/results.parquet"
+OUT_FILE_NAME = os.environ.get('OUT_FILE_NAME')
 
 
 def main():
